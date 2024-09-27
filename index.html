@@ -8,9 +8,7 @@
         </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
     <body>
         <header class="cabeçalho">
@@ -45,10 +43,46 @@
                 <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container__imagem"></a>
             </div>
         </header>
-
-    </body>
-
-
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa 
+                estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+            <!-- Slider main container -->
+                <div class="swiper">
+              <!-- Additional required wrapper -->
+                 <div class="swiper-wrapper">
+              <!-- Slides -->
+        <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
+         <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre Javascript da AluraBooks"></div>
+      <div class="swiper-slide"><img src="img/Portugol.png" alt="Livro sobre Portugol da Alurabooks"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = swiper(' .swiper',{
+            spaceBetween: 30,
+            slidePerview: 3,
+            pagination:{
+                el: 'swiper-pagination',
+                type:'bullets,'
+            },
+        }),
+        </scripit>
 
 
 </html>
